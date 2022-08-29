@@ -81,7 +81,7 @@ router.put("/:userId/friends/:friendId", async (req, res) => {
       }
     );
     console.log(updatedUser);
-    res.status(200).json("yay");
+    res.status(200).json("Successfully Added Friend");
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
